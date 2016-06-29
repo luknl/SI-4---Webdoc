@@ -3,28 +3,27 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
   </head>
   <body>
     <main id="barba-wrapper">
-      <div class="barba-container" data-namespace="grid">
-        <a class="intro-thumb" href="2.html">
-          <div class="full" style="background-image: url('images/2.jpg');"></div>
-        </a>
-        <a class="intro-thumb" href="3.html">
-          <div class="full" style="background-image: url('images/3.jpg');"></div>
-        </a>
-        <a class="intro-thumb" href="4.html">
-          <div class="full" style="background-image: url('images/4.jpg');"></div>
-        </a>
-        <a class="intro-thumb" href="1.html">
-          <div class="full" style="background-image: url('images/1.jpg');"></div>
-        </a>
-      </div>
-    </main>
 
-    <script src="barba.js"></script>
-    <script src="grid.js"></script>
+  <div class="barba-container" data-namespace="grid">
+      <div class="intro">
+          <a href="1-commencement.html">
+           Commencer
+          </a>
+      </div>
+  </div>
+      <video class="landing-video" width="100%" height="100%">
+        <source src="src/medias/videos/tribute.mp4" type="video/mp4"/>
+      </video>
+       <div class="landing-img" style="background-image: url('src/medias/images/ticket.png');">
+    </main>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="src/js/app/barba.js"></script>
+    <script src="src/js/app/grid.js"></script>
+    <script src="src/js/app/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
   </body>
 </html>
