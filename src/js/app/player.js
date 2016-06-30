@@ -8,6 +8,7 @@ player.seek_bar = player.container.querySelector('.seek-bar');
 player.progress_bar = player.seek_bar.querySelector('.progress-bar');
 player.progress_button = player.seek_bar.querySelector('.progress-button');
 player.playPause = player.container.querySelector('.play-pause');
+player.play = document.querySelector('.playy');
 player.mute = player.container.querySelector('.volume-button');
 player.volumeslider = player.container.querySelector('.volumeslider');
 player.fullscreen = false;
@@ -104,6 +105,11 @@ player.playPause.addEventListener('click', function () {
         player.video.play();
     else
         player.video.pause();
+});
+
+player.play.addEventListener('click', function () {
+        player.video.play();
+        player.play.style.display = 'none';
 });
 
 

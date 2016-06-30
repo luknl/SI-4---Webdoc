@@ -48,6 +48,8 @@ $(function() {
                 */
 
                 _this.done();
+                        window.location = window.location;
+                        window.location.reload();
             });
         }
     });

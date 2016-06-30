@@ -188,6 +188,24 @@ video {
     margin: 5px 0px 0px 20px;
 }
 
+.playy {
+    background: url(../medias/images/play.svg);
+    background-size: 70px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    margin-top:250px;
+    left:calc(50% - 20px);
+    z-index: 3;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.playy:hover {
+   opacity: .85;
+}
+
 .bar .paused {
     background: url(../medias/images/pause.png);
     background-size: 27px;
@@ -315,52 +333,6 @@ input.volumeslider {
 
 /* Responsive (Style for resolution under 1280px) */
 
-/*@media screen and (max-width: 1280px) {
-    h1 {
-        font-size: 2em;
-        padding-top: 10px;
-    }
-    h2 {
-        font-size: 2.2em;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 20px;
-        margin-top: -30px;
-    }
-    p {
-        font-size: 1em;
-        margin: 0;
-        right: 3%;
-        padding-bottom: 20px;
-        margin-top: -20px;
-    }
-    header {
-        height: 55px;
-    }
-    .player-background {
-        width: 680px;
-        padding: 50px 50px 50px 50px;
-    }
-    video {
-        width: 680px;
-    }
-    .player {
-        width: 680px;
-    }
-    .player .bar {
-        width: 680px;
-        height: 45px;
-        margin: auto;
-        position: relative;
-        margin-top: -45px;
-    }
-    .fullscreen_enter {
-        right: 3%;
-    }
-    .fullscreen_exit {
-        right: 3%;
-    }
-}*/
 
 
 .header-nav{
@@ -397,58 +369,138 @@ h1{
 
 .previous{
    float:left;
+   margin-top:20px;
+}
+
+.next{
+   float:right;
+   margin-top:10px;
+   margin-right:20px;
 }
 
 .home{
    float:left;
-   margin-left:calc(50% - 250px);
-   width: 90px;
-   height:90px;
-   border-radius: 50%;
-   background:white;
-   margin-top:-40px;
+   margin-left:calc(50% - 350px);
    position: absolute;
 }
 
 .home-content img{
    margin:10px 27px;
+   width: 30px;
+}
+
+.home:hover{
+   opacity: .7;
 }
 
 .home-content p{
    text-align: center;
-   margin:0px 0;
+   margin:-10px 5px 0px 5px;
 }
-
-.next{
-   float:right;
-}
-
-.reverse{
-     -webkit-transform: rotateY(180deg);
-     -ms-transform    : rotateY(180deg);
-     -o-transform     : rotateY(180deg);
-     transform        : rotateY(180deg);
-}
-
 .sidebar{
-   width:300px;
+   width:450px;
    height:100%;
-   background:white;
    position: absolute;
    z-index: 2;
    float:left;
    transition: 1s ease all;
+   background: #FFFFFF;
+box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.50);
 }
 
 .show{
-   transform: translateX(-300px);
+   transform: translateX(-450px);
 }
 
 .sidebtn{
-   width:50px;
-   height:50px;
-   border-radius: 50%;
-   background:red;
-   margin:300px 0 0 270px;
+   position: absolute;
+   width:65px;
+   height:100px;
+   border-radius: 50px;
+   background:white;
+   margin:300px 0 0 418px;
    cursor: pointer;
+   z-index: 1;
+}
+
+.sidebtn img{
+   width: 30px;
+   margin-top:32px;
+   margin-left:31px;
+}
+
+.sidebtn img:hover{
+   opacity: .5;
+}
+
+
+a{
+   text-decoration: none;
+   color: #7D7D7D;
+}
+
+.head{
+   height:200px;
+   background: #F1F1F1;
+   box-shadow: 0px 2px 10px 0px rgba(124,124,124,0.60);
+   text-transform: uppercase;
+   font-size:21px;
+}
+
+.head h1{
+   color:#C7C7C7;
+   padding-top:40px;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+   .playy {
+       background: url(../medias/images/play.svg);
+       background-size: 70px;
+       width: 70px;
+       height: 70px;
+       display: block;
+       position: absolute;
+       margin-top:50px;
+       left:calc(50% - 20px);
+       z-index: 3;
+       cursor: pointer;
+       transition: .5s ease all;
+   }
+
+   .sidebar{
+      width:300px!important;
+      height:100vh!important;
+      position: absolute;
+   }
+
+   .show{
+      transform: translateX(-300px)!important;
+   }
+
+   .sidebtn{
+      width:65px;
+      height:100px;
+      border-radius: 50px;
+      background:white;
+      margin:50px 0 0 268px!important;
+      cursor: pointer;
+      z-index: 1;
+   }
+
+   .head{
+      height:150px;
+      background: #F1F1F1;
+      box-shadow: 0px 2px 10px 0px rgba(124,124,124,0.60);
+      text-transform: lowercase;;
+      font-size:14px;
+   }
+
+   .head h1{
+      color:#C7C7C7;
+      padding-top:10px;
+   }
+
 }
