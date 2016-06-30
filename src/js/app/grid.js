@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function() {
     showNewPage: function() {
       this.newContainer.style.visibility = 'visible';
       this.done();
+          if(!window.location.hash) {
+              window.location = window.location;
+              window.location.reload();
+          }
     }
   });
 

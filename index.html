@@ -6,23 +6,33 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
   </head>
   <body>
-    <main id="barba-wrapper">
 
-  <div class="barba-container" data-namespace="grid">
-      <div class="intro">
-          <a href="1-commencement.html">
-           Commencer
-          </a>
-      </div>
-  </div>
       <video class="landing-video" width="100%" height="100%">
         <source src="src/medias/videos/tribute.mp4" type="video/mp4"/>
       </video>
-       <div class="landing-img" style="background-image: url('src/medias/images/ticket.png');">
+
+    <main id="barba-wrapper">
+  <div class="barba-container" data-namespace="grid">
+       <div class="landing-first">
+          <h1>A Myazaki webdoc</h1>
+          <img class="landing-img" src="src/medias/images/ticket.png" alt="ticket"/>
+       </div>
+
+      <div class="intro">
+          <a href="1.html">
+           Commencer
+          </a>
+      </div>
+      <div class="skip">
+             <a href="1.html">
+              Passer l'intro
+             </a>
+      </div>
+  </div>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="src/js/app/barba.js"></script>
-    <script src="src/js/app/grid.js"></script>
     <script src="src/js/app/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
   </body>

@@ -1,0 +1,77 @@
+1.Old
+
+<!doctype html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/css/style3.css">
+  </head>
+  <body>
+    <main id="barba-wrapper">
+      <div class="barba-container" data-namespace="detail" data-prev="3.html" data-next="2.html">
+     <div class="player-background">
+
+       <div class="header-nav">
+             <h1>Chapitre 1 : Le Commencement</h1>
+       </div>
+
+        <div class="player">
+            <video>
+                <source src="../src/medias/videos/tribute.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Controller bar-->
+            <div class="bar">
+
+
+                <!--  Seek-bar -->
+                <div class="seek-bar">
+                    <div class="progress-bar"></div>
+                    <div class="progress-buton"></div>
+                </div>
+
+
+                <!--Control buttons-->
+                <div class="play-pause playing"></div>
+                <div class="volume-button sound"></div>
+                <input class="volumeslider" type="range" value="100" min="0" max="100" step="1">
+                <div class="time"></div>
+                <a href="resources/video.ogv" download="Download video">
+                    <div class="download"></div>
+                </a>
+                <div class="fullscreenbutton fullscreen_enter"></div>
+
+            </div>
+        </div>
+
+      <div class="footer-nav">
+         <ul>
+            <a class="prev" href="3.html"><li class="previous">
+               <span><img class="reverse" src="../src/medias/images/arrowgrey.svg"/></span>
+               <span>Chapitre Précedent</span>
+            </li>
+         </a>
+            <li class="home">
+               <div class="home-content"><img class="reverse" src="../src/medias/images/home.svg"/>
+               <p>ACCUEIL</p>
+               </div>
+            </li>
+            <li class="next">
+            <span>Chapitre Suivant</span>
+               <span><img src="../src/medias/images/arrowgrey.svg"/></span>
+            </li>
+         </ul>
+      </div>
+
+    </div>
+</div>
+</main>
+
+   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="../src/js/app/player.js"></script>
+    <script src="../src/js/app/nextprev.js"></script>
+   <script src="../src/js/app/barba.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+  </body>
+</html>
